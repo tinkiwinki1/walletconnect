@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             const namespaces = {};
             Object.keys(requiredNamespaces).forEach(key => {
                 namespaces[key] = {
-                    accounts: ['eip155:1:0x0...'], // Укажите адреса, которые вы хотите использовать
+                    accounts: ['eip155:1:0x0...'], //
                     methods: requiredNamespaces[key].methods,
                     events: requiredNamespaces[key].events,
                 };
@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 console.log('Opening modal with URI:', uri);
                 statusMessage.textContent = 'Opening modal...';
 
-                // Открытие модального окна с QR-кодом
+               
                 modal.style.display = 'block';
                 qrCodeContainer.innerHTML = '';
                 new QRCode(qrCodeContainer, uri);
@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
     });
 
-    // Закрытие модального окна
+    
     span.onclick = function () {
         modal.style.display = 'none';
     }
